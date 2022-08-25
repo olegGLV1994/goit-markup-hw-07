@@ -92,7 +92,6 @@ body {
 .header-item {
   margin-left: 93px;
 }
-
 .header-list .header-item + .header-item {
   margin-left: 50px;
 }
@@ -118,6 +117,9 @@ body {
   padding: 32px 0;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
+.header-link:hover, .header-link:focus {
+  color: var(--accent-color);
+}
 
 .header-border-link {
   position: relative;
@@ -132,11 +134,6 @@ body {
   height: 4px;
   bottom: 0;
   left: 0;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
 }
 
 .header-auth .header-auth-item + .header-auth-item {
@@ -163,9 +160,7 @@ body {
   fill: #757575;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.header-auth-link:hover,
-.header-auth-link:focus {
+.header-auth-link:hover, .header-auth-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -217,9 +212,7 @@ body {
   border-color: transparent;
   transition: box-shadow 250ms var(--transition), background-color 250ms var(--transition), color 250ms var(--transition);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -335,23 +328,19 @@ body {
   transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
   border-radius: 50%;
 }
-
-.team-icon-link:hover,
-.team-icon-link:focus {
+.team-icon-link:hover, .team-icon-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
 
+.team-soc-icon {
+  fill: #afb1b8;
+}
 .team-icon-link:hover .team-soc-icon {
   fill: #ffffff;
 }
-
 .team-icon-link:focus .team-soc-icon {
   fill: #ffffff;
-}
-
-.team-soc-icon {
-  fill: #afb1b8;
 }
 
 .clients-list {
@@ -369,24 +358,20 @@ body {
   align-items: center;
   transition: border-color 250ms var(--transition);
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border-color: var(--accent-color);
   outline: none;
-}
-
-.clients-link:hover .clients-icon {
-  fill: var(--accent-color);
-}
-
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
 }
 
 .clients-icon {
   fill: #afb1b8;
   transition: fill 250ms var(--transition);
+}
+.clients-link:hover .clients-icon {
+  fill: var(--accent-color);
+}
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 .footer {
@@ -406,6 +391,9 @@ body {
   font-style: normal;
   transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
 }
+.adress-link:hover, .adress-link:focus {
+  color: var(--accent-color);
+}
 
 .contact-link {
   font-weight: 400;
@@ -414,14 +402,7 @@ body {
   font-style: normal;
   transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
 }
-
-.adress-link:hover,
-.adress-link:focus {
-  color: var(--accent-color);
-}
-
-.contact-link:hover,
-.contact-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -469,15 +450,13 @@ body {
   background: rgba(255, 255, 255, 0.1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
 }
+.footer-icon-link:focus, .footer-icon-link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
 
 .footer-soc-icon {
   fill: #ffffff;
-}
-
-.footer-icon-link:focus,
-.footer-icon-link:hover {
-  background-color: var(--accent-color);
-  border-radius: 50%;
 }
 
 .footer-position {
@@ -542,7 +521,6 @@ body {
   margin-top: 12px;
 }
 
-/*  -----------------------PORTFOLIO----------------- */
 .backdrop {
   position: fixed;
   width: 100%;
@@ -582,9 +560,7 @@ body {
 .modal-svg {
   transition: fill 250ms var(--transition);
 }
-
-.modal-svg:hover,
-.modal-svg:hover {
+.modal-svg:hover, .modal-svg:hover {
   fill: var(--accent-color);
 }
 
@@ -612,9 +588,11 @@ body {
   outline: none;
   transition: outline-color 250ms var(--accent-color);
 }
-
-.modal-input:focus {
+.model-input:focus {
   outline-color: var(--accent-color);
+}
+.model-input:focus {
+  border: 1px solid #2196f3;
 }
 
 .modal-input:focus + .input-icon {
@@ -647,7 +625,6 @@ body {
   height: 120px;
   outline: none;
 }
-
 .modal-textarea:focus {
   border: 1px solid #2196f3;
 }
@@ -677,9 +654,7 @@ body {
   margin-top: 30px;
   cursor: pointer;
 }
-
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -725,10 +700,6 @@ body {
 
 .model-input:focus ~ .modal-icon {
   fill: #2196f3;
-}
-
-.model-input:focus {
-  border: 1px solid #2196f3;
 }
 
 .modal-link {

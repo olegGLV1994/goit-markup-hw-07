@@ -12,22 +12,20 @@
   justify-content: center;
   align-items: center;
   transition: border-color 250ms var(--transition);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-.clients-link:hover .clients-icon {
-  fill: var(--accent-color);
-}
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .clients-icon {
   fill: #afb1b8;
   transition: fill 250ms var(--transition);
+  .clients-link:hover & {
+    fill: var(--accent-color);
+  }
+  .clients-link:focus & {
+    fill: var(--accent-color);
+  }
 }

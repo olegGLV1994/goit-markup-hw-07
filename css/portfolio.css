@@ -1,3 +1,71 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primery-title-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.title {
+  color: var(--primery-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .portfolio-header {
   border: 1px solid #ececec;
 }
@@ -359,82 +427,6 @@
   margin-top: 12px;
 }
 
-:root {
-  --primery-title-color: #212121;
-  --text-color: #757575;
-  --accent-color: #2196f3;
-  --footer-bcg-color: #2f303a;
-  --transition: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-*,
-*::before,
-*:after {
-  box-sizing: border-box;
-}
-
-img {
-  display: block;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  background-color: #ffffff;
-  color: var(--primery-title-color);
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-.title {
-  color: var(--primery-title-color);
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.footer-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -447,4 +439,12 @@ body {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+}
+
+:root {
+  --primery-title-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --footer-bcg-color: #2f303a;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=portfolio.css.map */

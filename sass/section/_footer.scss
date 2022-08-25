@@ -14,6 +14,10 @@
   color: #ffffff;
   font-style: normal;
   transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-link {
@@ -22,16 +26,10 @@
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
-}
-
-.adress-link:hover,
-.adress-link:focus {
-  color: var(--accent-color);
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address-item:not(:last-child) {
@@ -77,16 +75,15 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
 }
 
 .footer-soc-icon {
   fill: #ffffff;
-}
-
-.footer-icon-link:focus,
-.footer-icon-link:hover {
-  background-color: var(--accent-color);
-  border-radius: 50%;
 }
 
 .footer-position {
@@ -150,11 +147,3 @@
   margin-left: 93px;
   margin-top: 12px;
 }
-
-/*  -----------------------PORTFOLIO----------------- */
-
-
-
-
-
-
