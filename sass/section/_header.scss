@@ -1,3 +1,7 @@
+.portfolio-header {
+  border: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -35,9 +39,7 @@
 }
 
 .header-link {
-  color: var(--primery-title-color);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  @include header-auth-title;
   padding: 32px 0;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -76,9 +78,8 @@
 }
 
 .header-auth-link {
+  @include header-auth-title;
   color: var(--text-color);
-  font-weight: 500;
-  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;

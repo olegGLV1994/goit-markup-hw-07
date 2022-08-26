@@ -15,20 +15,11 @@
 }
 
 .team-secondary-title {
-  color: var(--primery-title-color);
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 30px;
+  @include team-secondary-title;
 }
 
 .team-text {
-  color: var(--text-color);
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 16px;
+  @include team-text;
 }
 
 .team-icon-list {

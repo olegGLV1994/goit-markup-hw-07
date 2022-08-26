@@ -12,12 +12,7 @@
 }
 
 .work-text {
-  position: absolute;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #ffffff;
+  @include work-title;
 }
 
 .work-box {
