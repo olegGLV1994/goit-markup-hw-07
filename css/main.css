@@ -183,6 +183,10 @@ body {
   color: var(--accent-color);
 }
 
+.portfolio-header {
+  border: 1px solid #ececec;
+}
+
 .hero {
   background-color: var(--footer-bcg-color);
   min-height: 600px;
@@ -757,9 +761,7 @@ body {
   border-color: transparent;
   transition: box-shadow 250ms var(--transition), background-color 250ms var(--transition), color 250ms var(--transition);
 }
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:hover, .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -777,20 +779,12 @@ body {
   margin-bottom: 30px;
 }
 
-.content-link:hover .content-text-pre,
-.content-link:focus .content-text-pre {
-  transform: translateY(0);
-  border: 1px solid #eeeeee;
-}
-
 .content-link {
   transition: cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms;
   outline: none;
   display: inline-block;
 }
-
-.content-link:hover,
-.content-link:focus {
+.content-link:hover, .content-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -807,7 +801,11 @@ body {
   max-width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) transform 250ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.content-link:hover .content-text-pre, .content-link:focus .content-text-pre {
+  transform: translateY(0);
+  border: 1px solid #eeeeee;
 }
 
 .box-content {
