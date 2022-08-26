@@ -67,9 +67,6 @@
   outline: none;
   transition: border 250ms var(--accent-color);
   &:focus {
-    outline-color: var(--accent-color);
-  }
-  &:focus {
     border: 1px solid #2196f3;
   }
 }
@@ -142,12 +139,7 @@
   }
 }
 
-.modal-checkbox {
-  margin-top: 20px;
-}
-
 .modal-check {
-  padding-left: 12px;
   margin-top: 20px;
 }
 
@@ -168,12 +160,14 @@
   color: transparent;
   transition: background-color 250ms var(--transition),
     border-color 250ms var(--transition), color 250ms var(--transition);
+  text-align: center;
 }
 
 .label-check {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .modal-checkbox:checked + .label-check span {
