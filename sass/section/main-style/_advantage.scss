@@ -4,12 +4,17 @@
 }
 
 .advantage-secondary-title {
-  @include title;
+  color: var(--primery-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .advantage-text {
-  @include text;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 .advantage-icon-border {
