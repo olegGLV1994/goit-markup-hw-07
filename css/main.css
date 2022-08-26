@@ -510,18 +510,7 @@ body {
   border-radius: 4px;
   background-color: transparent;
   color: #ffffff;
-}
-
-.footer-input::-moz-placeholder {
-  padding: 15px;
-}
-
-.footer-input:-ms-input-placeholder {
-  padding: 15px;
-}
-
-.footer-input::placeholder {
-  padding: 15px;
+  padding-left: 16px;
 }
 
 .footer-form {
