@@ -606,10 +606,10 @@ body {
   border-radius: 4px;
   padding-left: 40px;
   outline: none;
-  transition: border 250ms var(--accent-color);
+  transition: border-color 250ms var(--accent-color);
 }
 .model-input:focus {
-  border: 1px solid #2196f3;
+  border-color: #2196f3;
 }
 
 .modal-input:focus + .input-icon {
