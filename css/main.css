@@ -726,7 +726,6 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  opacity: 0.5;
 }
 
 .modal-textarea:-ms-input-placeholder {
@@ -735,7 +734,6 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  opacity: 0.5;
 }
 
 .modal-textarea:placeholder-shown {
@@ -744,7 +742,6 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  opacity: 0.5;
 }
 
 .radio-buttons {
