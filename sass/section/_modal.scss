@@ -195,3 +195,12 @@
   letter-spacing: 0.01em;
   color: #757575;
 }
+
+.modal-textarea:placeholder-shown {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  opacity: 0.5;
+}
