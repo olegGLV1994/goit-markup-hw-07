@@ -108,7 +108,8 @@ body {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  color: #2196f3;
+  color: var(--accent-color);
+  display: inline-block;
 }
 
 .header-list {
@@ -733,8 +734,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
-.portfolio-btn {
+.radio-buttons__button {
   background-color: #f5f4fa;
   color: var(--primery-title-color);
   cursor: pointer;
@@ -749,34 +749,39 @@ body {
   border-color: transparent;
   transition: box-shadow 250ms var(--transition), background-color 250ms var(--transition), color 250ms var(--transition);
 }
-.portfolio-btn:hover, .portfolio-btn:focus {
+.radio-buttons__button:hover, .radio-buttons__button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.content-list {
+.cards-list {
   margin-top: 0;
   display: flex;
   flex-wrap: wrap;
 }
-
-.content-item {
+.cards-list__item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
-.content-link {
+.cards-list__item:nth-child(3n) {
+  margin-right: 0;
+}
+.cards-list__link {
   transition: cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms;
   outline: none;
   display: inline-block;
 }
-.content-link:hover, .content-link:focus {
+.cards-list__link:hover, .cards-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.content-text-pre {
+.cards-container {
+  position: relative;
+  overflow: hidden;
+}
+.cards-container__text {
   position: absolute;
   font-weight: 400;
   font-size: 18px;
@@ -791,34 +796,23 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.content-link:hover .content-text-pre, .content-link:focus .content-text-pre {
+.cards-list__link:hover .cards-container__text, .cards-list__link:focus .cards-container__text {
   transform: translateY(0);
   border: 1px solid #eeeeee;
 }
 
-.box-content {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-content {
+.cards-box {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-
-.content-title {
+.cards-box__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primery-title-color);
 }
-
-.content-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.content-text {
+.cards-box__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;

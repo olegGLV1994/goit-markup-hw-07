@@ -18,7 +18,8 @@
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  color: #2196f3;
+  color: var(--accent-color);
+  display: inline-block;
 }
 
 .header-list {
