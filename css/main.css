@@ -28,6 +28,9 @@
 
 img {
   display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 p,
@@ -54,10 +57,24 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 body {
@@ -70,17 +87,35 @@ body {
 }
 
 .title {
-  color: var(--primery-title-color);
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
 }
 
 .section-padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .footer-section {
@@ -232,6 +267,17 @@ body {
 .feauture-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .feauture-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feauture-list__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .feauture-list__title {
   color: var(--primery-title-color);
@@ -239,6 +285,12 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feauture-list__title {
+    text-align: start;
+  }
 }
 .feauture-list__text {
   color: var(--text-color);
@@ -248,12 +300,17 @@ body {
 .feauture-list__icon {
   background: #f5f4fa;
   border-radius: 4px;
-  width: 270px;
+  max-width: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   height: 120px;
+}
+@media screen and (min-width: 768px) {
+  .feauture-list__icon {
+    max-width: 354px;
+  }
 }
 
 .work {
@@ -288,22 +345,42 @@ body {
 .team {
   background-color: #f5f4fa;
 }
-.team__container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 .team-list__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 60px) / 4);
+  }
 }
 .team-list__title {
   color: var(--primery-title-color);
@@ -354,16 +431,43 @@ body {
 .clients-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .clients-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .clients-list__link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: border-color 250ms var(--transition);
+}
+@media screen and (min-width: 768px) {
+  .clients-list__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    width: 170px;
+  }
 }
 .clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-color);
